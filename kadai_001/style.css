@@ -1,0 +1,138 @@
+/*pcスマホ共通*/
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#top-logo {
+    border: solid;
+    font-size: 34px;
+    color: black;
+    padding: 0 10px 0 10px; 
+}
+
+#top-nav {
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+#nav-header {
+    font-size: 34px;
+}
+
+#nav-header ul {
+    display: flex;
+}
+
+#nav-header li {
+    list-style: none;
+}
+
+#nav-header a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+
+#nav-header a:hover {
+    text-decoration: underline;
+}
+
+/*body img*/
+#main-img img {
+    width: 100%;
+}
+
+/*ABOUT*/
+h2 {
+    text-align: center;
+    font-size: 34px;
+}
+
+#about-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#about-img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+}
+
+#about-text {
+    font-size: 18px;
+    margin : auto 0 auto 0;
+}
+
+.name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 24px;
+}
+
+/*WORKS*/
+#works {
+    margin: 0 auto 0 auto;
+    max-width: 752px;
+    width: 80%;
+}
+#works-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.works-item {
+    width: 30%;
+}
+.works-item img {
+    width: 100%;
+    height: auto;
+}
+
+#copyright {
+    text-align: center;
+}
+
+/*スマホ用スタイル*/
+@media screen and (max-width: 767px) {
+    #about-img {
+        margin: 0;
+        width: 80%;
+        height: auto;
+    }
+    #about-flex {
+        display: block;
+        text-align: center;
+    }     
+
+    #about-text > ul {
+        text-align: left;
+        max-inline-size: max-content;
+        margin-inline: auto;
+    }
+
+    #works-flex {
+        display: block;
+    }
+
+    .works-item {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+}
